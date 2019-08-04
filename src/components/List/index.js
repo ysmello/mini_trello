@@ -1,11 +1,27 @@
 import React from 'react';
 
+import { MdAdd } from 'react-icons/md'
+
 import { Container } from './styles'
+import Card from '../Card'
 
 const List = () => {
     return (
         <Container>
-            <h2>Tarefas</h2>
+            <header>
+                <h2>Tarefas</h2>
+                <button type="button">
+                    <MdAdd size={18} color="#fff" />
+                </button>
+            </header>
+
+            <ul>
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </ul>
         </Container>
     );
 };

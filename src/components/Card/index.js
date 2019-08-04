@@ -1,10 +1,16 @@
 import React from 'react';
 
+import { Container, Label } from './styles'
+
 const Card = () => {
     return (
-        <div>
-            
-        </div>
+        <Container>
+            <header>
+                <Label color="#7159c1" />
+            </header>
+            <p>Fazer a migração completa do servidor</p>
+            <img src="https://api.adorable.io/avatars/70/abott@adorable.png" alt="icon" />
+        </Container>
     );
 };
 
